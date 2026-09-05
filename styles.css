@@ -43,10 +43,17 @@ header h1{
 
 
 /* Nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px; 
 }
 
 nav a:hover {
@@ -72,15 +79,21 @@ section {
 
 /* Class Selector */
 .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
     margin: 15px 0;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid #cccccc;
     border-radius: 6px;
 }
 
 .skills-grid li {
-    margin: 8px 0;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
 }
 
 
